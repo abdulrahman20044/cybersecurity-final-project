@@ -1,0 +1,160 @@
+
+/* General Settings */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0 0 15px;
+  color: #38bdf8;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #0369a1);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #7dd3fc;
+}
+
+/* Sections */
+section:not(.hero) {
+  padding: 60px 8%;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-top: 4px solid #0284c7;
+}
+
+.card h3 {
+  color: #0369a1;
+}
+
+/* Security Tips */
+#tips {
+  background: #e0f2fe;
+}
+
+#tips ul {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 55px 15px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  section:not(.hero) {
+    padding: 35px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
